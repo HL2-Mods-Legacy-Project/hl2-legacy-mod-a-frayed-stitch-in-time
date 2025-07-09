@@ -1,12 +1,11 @@
 & "$PSScriptRoot\..\gitmodules\mod-installer\build_all.ps1" `
-  -Version "<version>" `
+  -Version "2.0.0" `
   -PreReleaseVersion "beta.1" `
-  -OutputFilePrefix "<output file prefix>" `
-  -ModName "<mod name>" `
-  -ModFolder "<mod folder>" `
-  -AdditionalModFolders @() `
+  -OutputFilePrefix "AFSIT_EP1" `
+  -ModName "A Frayed Stitch in Time EP1" `
+  -ModFolder "cascade" `
   -ModFilesPath "$PSScriptRoot\..\game" `
-  -ModBaseFilesUrl "<url to mod base files zip>" `
-  -ModBaseFilesUrlHash "<mod base files zip sha256>" `
-  -ModReadmePath "<mod readme path>" `
+  -ModBaseFilesUrl "https://github.com/HL2-Mods-Legacy-Project/hl2-legacy-registry/releases/download/a-frayed-stitch-in-time/A-Frayed-Stitch-In-Time-EP1-Original.zip" `
+  -ModBaseFilesUrlHash "c6d50fb008d68c3e65e5f4de679392ce93fb0f85e208857ef2e08202ba4e324c" `
+  -ModReadmePath "frayedreadme.txt" `
   -PublishPath "$PSScriptRoot\..\artifacts\publish"
